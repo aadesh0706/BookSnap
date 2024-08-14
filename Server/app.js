@@ -13,6 +13,15 @@ const app = express();
 app.use(cors({
   origin: 'https://booksnap-mu.vercel.app', // Your frontend URL without trailing slash
 }));
+const corsOptions = {
+  origin: 'https://booksnap-mu.vercel.app',
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
+  allowedHeaders: 'Content-Type,Authorization',
+  optionsSuccessStatus: 204 // Some legacy browsers (e.g., IE11) choke on 204
+};
+
+app.use(cors(corsOptions));
+app.options('*', cors(corsOptions)); // enable pre-flight across-the-board
 
 // Routes
 const authRoutes = require("./routes/auth");
