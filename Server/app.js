@@ -5,11 +5,11 @@ const cors = require('cors');
 
 const app = express();
 
-// app.use(cors({
-//   origin: 'http://localhost:5173', // Your frontend URL
-// }));
-// const cors = require('cors');
-app.use(cors());
+app.use(cors({
+  origin: 'https://booksnap-mu.vercel.app/', // Your frontend URL
+}));
+const cors = require('cors');
+// app.use(cors());
 
 // Routes
 const authRoutes = require("./routes/auth");
