@@ -56,7 +56,7 @@ function Login() {
         try {
           const email = prompt("Please enter your email address:");
           if (email) {
-            const response = await fetch("http://localhost:3000/api/forget-password", { email });
+            const response = await fetch("https://booksnap-backend.vercel.app/api/forget-password", { email });
             alert(response.data.message);
             console.log(response.data.message);
             
@@ -74,7 +74,7 @@ function Login() {
       const email = data.email;
       const password = data.password;
       try {
-        const response = await fetch('http://localhost:3000/api/signin', {
+        const response = await fetch('https://booksnap-backend.vercel.app/api/signin', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
