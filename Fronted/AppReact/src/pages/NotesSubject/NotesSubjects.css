@@ -1,0 +1,31 @@
+.components {
+    width: 100%;
+    max-width: 600px;
+    margin-left : 25%;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.btn-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    /* text-decoration: none; */
+}
+
+.pdf-openn{
+    background-color: white;
+    color: black;
+    width: 560px;
+    height: 64px;
+    padding: 15px 30px;
+    margin: 10px 0;
+    font-size: 26px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 3px solid #E3E2E2;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}

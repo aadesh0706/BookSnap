@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logout</title>
+</head>
+<body>
+  <h1>Welcome to the App</h1>
+  <button id="logoutBtn">Logout</button>
+
+  <script>
+  document.getElementById('logoutBtn').addEventListener('click', function() {
+    fetch('/api/logout', { method: 'POST' })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Logout failed');
+        }
+        return response.json();
+      })
+      .then(data => {
+        alert(data.message); // Show success message
+        window.location.href = '/login.html'; // Redirect to login page
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('Logout failed: ' + error.message); // Show error message
+      });
+  });
+</script>
+</body>
+</html>

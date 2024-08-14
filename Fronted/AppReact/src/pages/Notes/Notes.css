@@ -1,0 +1,69 @@
+.notes-page {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.components {
+    width: 100%;
+    max-width: 600px;
+    margin-left : 25%;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-size: 25px;
+}
+.notesh1{
+    font-size: 48px;
+    font-weight: 500;
+    letter-spacing: 1.3;
+    font-family: Inter;
+}
+
+.Btn {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 220px;
+    justify-content: center;
+}
+
+.btn-group {
+    position: relative;
+    width: 376px;
+}
+
+.btn-shadow {
+    height: 155px;
+    width: 376px;
+    border-radius: 15px;
+    background-color: #bfbfbf;
+    position: absolute;
+    top: 0;
+    left: -12px;
+}
+
+.Btn1 {
+    position: relative;
+    width: 350px;
+    height: 172px;
+    margin-top: 15px;
+    background-color: #ffff;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 0px 15px gray;
+}
+
+.Btn1:hover {
+    background-color: rgb(191, 191, 191);
+}
+
+.Btn1:active {
+    background-color: rgb(191, 191, 191);
+}

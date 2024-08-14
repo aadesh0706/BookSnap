@@ -1,0 +1,20 @@
+
+
+.pdf-openn {
+    background-color: white;
+    color: black;
+    width: 560px;
+    height: 64px;
+    padding: 15px 30px;
+    margin: 10px 0;
+    /* margin: auto; */
+    font-size: 26px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 3px solid #E3E2E2;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

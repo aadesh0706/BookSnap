@@ -1,0 +1,16 @@
+.login-signup{
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-signup-left{
+    padding: 120px;
+}
+.login-signup-left>h1{
+    padding: 10px 0px;
+    font-family: poppins;
+}
+
+.login-signup-inputBox{
+    padding: 10px 0px;
+}
