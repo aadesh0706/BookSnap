@@ -46,19 +46,22 @@ function Navbar() {
     },
     { 
       name : "Notes",
-      path : (authStatus)?('notes'):('login'),
+      //path : (authStatus)?('notes'):('login'),
+      path : 'notes',
       // active : authStatus
       active : true
     },
     { 
       name : "Shop",
-      path : (authStatus)?('shop'):('login'),
+      //path : (authStatus)?('shop'):('login'),
+      path : 'shop',
       // active : authStatus
       active : true 
     },
     { 
       name : "Community",
-      path : (authStatus)?('community'):('login'),
+      //path : (authStatus)?('community'):('login'),
+      path : 'community',
       // active : authStatus
       active : true
     },
