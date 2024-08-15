@@ -1,0 +1,22 @@
+/* .homepageBuyCards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10%;
+    width: 100%;
+
+}
+
+.homepageBuyCard{
+    width: 374px;
+    height: 281px;
+}
+
+.homepageBuyCardImg{
+    width: 374px;
+    height: 281px;
+    object-fit: cover;
+} */

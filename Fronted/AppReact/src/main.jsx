@@ -18,6 +18,7 @@ import SignUp from './pages/SignUp/SignUp.jsx'
 import Home from './pages/Home/Home.jsx'
 import AboutUs from './pages/AboutUs/AboutUs.jsx'
 import ContactUs from './pages/ContactUs/ContactUs.jsx'
+import UnderDevelopment from './pages/UnderDevelopment/UnderDevelopment.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -48,6 +49,8 @@ const router = createBrowserRouter(
       <Route path='signup' element={<SignUp/>}/>
       <Route path='aboutus' element={<AboutUs/>}/>
       <Route path='contactus' element={<ContactUs/>}/>
+      <Route path='community' element={<UnderDevelopment/>}/>
+      <Route path='shop' element={<UnderDevelopment/>}/>
     </Route>
 
 

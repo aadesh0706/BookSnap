@@ -80,6 +80,9 @@ function SignUp() {
     const {register, handleSubmit} = useForm()
     const [error, setError] = useState("")
 
+    const alreadyHaveAccount = () => {
+      navigate('/login')
+    }
     //this function is the method used to call os send the email,password to firebase on form submit 
     const login = (async(data) => {
       // setError('');
@@ -88,7 +91,7 @@ function SignUp() {
       const password = data.password;
      
       try {
-        const response = await fetch('https://booksnap-backend.vercel.app/api/signup', {
+        const response = await fetch('http://localhost:3000/api/signup', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -119,28 +122,34 @@ function SignUp() {
       <div className='login-signup'>
         <div className='login-signup-left'>
             <Logo/>
-            <h1 style={{padding: "10px 0px",font: "poppins"}}>Sign Up</h1>
+            <h1 style={{padding: "20px 0px",fontFamily: "Inter" , fontWeight:"400"}}>Sign Up</h1>
           <form onSubmit={handleSubmit(login)} className='login-signup-form'>
                 <div className='login-signup-inputBox'>
-                  <InputBox heightt="42px" widthh="411px" placeholderr="Your email" imgSource="../../../public/assets/images/inputBoxEmail.png"
+                  <InputBox heightt="42px" widthh="411px" placeholderr="Your email" imgSource="/assets/images/inputBoxEmail.png"
                     {...register("email" , {required:true})}
                   />
                 </div>
                 <div className='login-signup-inputBox'>
-                  <InputBox heightt="42px" widthh="411px" placeholderr="Your password" imgSource="../../../public/assets/images/inputBoxPass.png"
+                  <InputBox heightt="42px" widthh="411px" placeholderr="Create password" imgSource="/assets/images/inputBoxPass.png"
                     {...register("password",{required:true})}
                   />
                 </div>
-                <div className='login-signup-inputBox'>
+                {/* <div className='login-signup-inputBox'>
                   <InputBox heightt="42px" widthh="411px" placeholderr="Repeat password" imgSource="../../../public/assets/images/inputBoxPass.png"
                     {...register("password",{required:true})}
                   />
+                </div> */}
+                <div className='login-signup-inputBox' ><Button heightt="42px" widthh="411px" typee="submit" buttonText="SignUp"/></div>
+
+                <div className='checksOnClick' style={{display:'flex',justifyContent:'space-between',fontFamily:'Inter'}}>
+                  <p className='forgetpassword' onClick={alreadyHaveAccount}>
+                    Already Have an Account?
+                  </p>
                 </div>
-                <div className='login-signup-inputBox' ><Button heightt="42px" widthh="411px" typee="submit" buttonText="Login"/></div>
             </form>
         </div>
-        <div>
-            <img src="../../../public/assets/images/Login.png" alt="" />
+        <div className='login-signup-right'>
+            <img src="/assets/images/Login.png" alt="" />
         </div>
       </div>
 

@@ -7,65 +7,66 @@ function AboutUs() {
 
     const teamMembers = [
         {
-            imageSource: "../../../public/assets/images/teamImages/AtharvaJagtap.png",
+            imageSource: "/assets/images/teamImages/AtharvaJagtap.png",
             name : "Atharva Jagtap",
             role : "Project Lead/UI-UX ",
         },
         {
-            imageSource: "../../../public/assets/images/teamImages/KaushalPawar.png",
+            imageSource: "/assets/images/teamImages/KaushalPawar.png",
             name : "Kaushal Pawar",
             role : "Project Lead/UI-UX ",
         },
         {
-            imageSource: "../../../public/assets/images/teamImages/AtharvaJagtap.png",
+            imageSource: "/assets/images/teamImages/PrathameshKunden.png",
             name : "Prathamesh Kunden",
             role : "Frontend Lead",
         },
         {
-            imageSource: "../../../public/assets/images/teamImages/AkashShelke.png",
+            imageSource: "/assets/images/teamImages/AkashShelke.png",
             name : "Akash Shelke",
             role : "Frontend Lead",
         },
         {
-            imageSource: "../../../public/assets/images/teamImages/AadeshGulumbe.png",
+            imageSource: "/assets/images/teamImages/AadeshGulumbe.png",
             name : "Aadesh Gulumbe",
             role : "Backend Lead",
         },
         {
-            imageSource: "../../../public/assets/images/teamImages/PranavDarokar.png",
+            imageSource: "/assets/images/teamImages/PranavDarokar.png",
             name : "Pranav Darokar",
             role : "Backend Lead",
         },
         {
-            imageSource: "../../../public/assets/images/teamImages/AtharvaChavan.png",
+            imageSource: "/assets/images/teamImages/AtharvaChavan.png",
             name : "Atharva Chavan",
             role : "UI-UX",
         },
         {
-            imageSource: "../../../public/assets/images/teamImages/ShreenidhiRithe.png",
+            imageSource: "/assets/images/teamImages/ShreenidhiRithe.png",
             name : "Shreenidhi Rithe",
             role : "BackEnd Developer",
         },
         {
-            imageSource: "../../../public/assets/images/teamImages/ChaitanyaSonawane.png",
+            imageSource: "/assets/images/teamImages/ChaitanyaSonawane.png",
             name : "Chaitanya Sonawane",
             role : "BackEnd Developer",
         },
         {
-            imageSource: "../../../public/assets/images/teamImages/JaydeepGaikwad.png",
+            imageSource: "/assets/images/teamImages/JaydeepGaikwad.png",
             name : "Jaydeep Gaikwad",
             role : "BackEnd Developer",
         },
         {
-            imageSource: "../../../public/assets/images/teamImages/DevyaniWadekar.png",
+            imageSource: "/assets/images/teamImages/OmBahale.png",
+            name : "Om Bahale",
+            role : "Database Management",
+        },
+        {
+            imageSource: "/assets/images/teamImages/DevyaniWadekar.png",
             name : "Devyani Wadekar",
             role : "BackEnd Developer",
         },
-        {
-            imageSource: "../../../public/assets/images/teamImages/AtharvaJagtap.png",
-            name : "Aditya Deshmukh",
-            role : "FrontEnd Developer",
-        },
+        
         
     ]
 
@@ -84,7 +85,7 @@ function AboutUs() {
                     </div>
                     <div>
                         <p>Join our team..!</p>
-                        <Button buttonText="Join Now"></Button>
+                        <Button  buttonText="Join Now" backgroundColor='#ffe500' color='#3c3c3c'></Button>
                     </div>
                 </div>
                 <div className='aboutUsInfoItem_right'>

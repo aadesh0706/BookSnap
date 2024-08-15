@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Button({widthh="411px",heightt="42px",typee="button",buttonText,borderRadius="10px",fontFamily="poppins" ,fontSize="14px",backgroundColor="#1e1f25"}) {
+function Button({widthh="411px",heightt="42px",typee="button",buttonText,borderRadius="10px",fontFamily="poppins" ,fontSize="14px",backgroundColor="#1e1f25" ,color="#E0E2E9"}) {
   return (
     <>
         <div style={{width:widthh,height:heightt}}>
@@ -13,7 +13,7 @@ function Button({widthh="411px",heightt="42px",typee="button",buttonText,borderR
                 fontWeight: "600",
                 backgroundColor: backgroundColor,
                 borderRadius : borderRadius,
-                color: "#E0E2E9",
+                color: color,
             }}
             
             >{buttonText}</button>

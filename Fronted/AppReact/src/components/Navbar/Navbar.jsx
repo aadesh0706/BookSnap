@@ -46,7 +46,19 @@ function Navbar() {
     },
     { 
       name : "Notes",
-      path : 'notes',
+      path : (authStatus)?('notes'):('login'),
+      // active : authStatus
+      active : true
+    },
+    { 
+      name : "Shop",
+      path : (authStatus)?('shop'):('login'),
+      // active : authStatus
+      active : true 
+    },
+    { 
+      name : "Community",
+      path : (authStatus)?('community'):('login'),
       // active : authStatus
       active : true
     },
@@ -86,7 +98,7 @@ function Navbar() {
       <nav>
       <div className='logo'>
         <img src={LogoImg} alt="" />
-        <h1>BOOKSNAP</h1>
+        <h1 style={{fontFamily:'Inter',letterSpacing:0.2}}>BOOKSNAP</h1>
       </div>
 
       <div>

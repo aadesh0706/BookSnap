@@ -1,5 +1,7 @@
 import React from 'react'
 import './ContactUs.css'
+
+import {Link} from 'react-router-dom'
 import Button from '../../components/Button/Button.jsx'
 
 function ContactUs() {
@@ -22,22 +24,26 @@ function ContactUs() {
                 </div>
                 <p className='contactUsLinksp'>+91 98765 43210</p>
             </div>
-            <div className='contactUsLinks'>
-                <div className='contactUsIconBackground'>
-                    <img src="../../../public/assets/images/ContactUsIcons/ContactUsMailIcon.png" alt="" />
-                </div>
-                <p className='contactUsLinksp'>qubitsassociation@gmail.com</p>
-            </div>
-            <div className='contactUsLinks'>
-                <div className='contactUsIconBackground'>
-                    <img src="../../../public/assets/images/ContactUsIcons/ContactUsLocationIcon.png" alt="" />
-                </div>
-                <p className='contactUsLinksp'>Location</p>
-            </div>
+            <Link className='contactUsL' to='mailto:qubitsassociation@gmail.com' >
+              <div className='contactUsLinks' >
+                  <div className='contactUsIconBackground'>
+                      <img src="../../../public/assets/images/ContactUsIcons/ContactUsMailIcon.png" alt="" />
+                  </div>
+                  <p className='contactUsLinksp'>qubitsassociation@gmail.com</p>
+              </div>
+            </Link>
+            <Link className='contactUsL' to='https://maps.app.goo.gl/8YiTNdnmEeiZawMs8'>
+              <div className='contactUsLinks'>
+                  <div className='contactUsIconBackground'>
+                      <img src="../../../public/assets/images/ContactUsIcons/ContactUsLocationIcon.png" alt="" />
+                  </div>
+                  <p className='contactUsLinksp'>Location</p>
+              </div>
+            </Link>
         </div>
             
         <div className='contactUsButton'>
-            <Button buttonText="Contact Us" heightt='107px' widthh='208px' fontSize = "32px" fontFamily="Inter" borderRadius="30px" backgroundColor="#434343"/>
+            <Button buttonText="Contact Us" heightt='107px' widthh='208px' fontSize = "32px" fontFamily="Inter" borderRadius="30px" backgroundColor="#ffff00" color="#131517"/>
         </div>
 
         {/* <div className="ContactUsDesignContainer">

@@ -27,6 +27,7 @@
     flex-wrap: wrap;
     gap: 220px;
     justify-content: center;
+    /* margin-bottom: 60px; */
 }
 
 .btn-group {
