@@ -10,12 +10,12 @@ function Footer() {
             <div className="about-section flexing">
                 <div className="textContent">
                     <h1 className="footerh1">About BOOKSNAP</h1>
-                    <h1 className="footerh1"> <img src="../../../public/assets/images/footerQuotes.png" alt=""/></h1>
+                    <h1 className="footerh1"> <img src="/assets/images/footerQuotes.png" alt=""/></h1>
                     <p className="quote">"BOOKSNAP is where your college journey gets easier and more exciting. Find the notes you need, pass on your books and tools to fellow students, and connect with others in our lively community chat. Explore inspiring alumni stories and see how they turned their experiences into success. Whether you're here to study, share, or just connect, BOOKSNAP is your go-to spot for everything in college life."</p>
                     <p className="footerp">~Founder Team</p>
                 </div>
                 <div className="imageContent">
-                    <img src="../../../public/assets/images/footerImg.jpg" alt="Students in classroom"/>
+                    <img src="/assets/images/footerImg.jpg" alt="Students in classroom"/>
                 </div>
             </div>
         </div>
