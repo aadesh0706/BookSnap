@@ -36,9 +36,9 @@ const router = createBrowserRouter(
 
 
 
-    <ScrollToTop/>
+    
     <Route path='/' element={<Layout/>}>
-      
+      <ScrollToTop/>
       <Route path='/' element={<Home/>}/>
       <Route path='notes' element={<Notes/>}/>
         {/* <Route path='sem/:semester'  */}
