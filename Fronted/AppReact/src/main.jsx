@@ -20,7 +20,7 @@ import AboutUs from './pages/AboutUs/AboutUs.jsx'
 import ContactUs from './pages/ContactUs/ContactUs.jsx'
 import UnderDevelopment from './pages/UnderDevelopment/UnderDevelopment.jsx'
 
-import ScrollToTop from './components/ScrollToTop.js'
+//import ScrollToTop from './components/ScrollToTop.js'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -69,7 +69,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>
       <PdfContextProvider>
-        <ScrollToTop/>
         <RouterProvider router = {router}/>
       </PdfContextProvider>
     </Provider>
