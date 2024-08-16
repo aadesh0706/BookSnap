@@ -38,7 +38,6 @@ const router = createBrowserRouter(
 
     
     <Route path='/' element={<Layout/>}>
-      <ScrollToTop/>
       <Route path='/' element={<Home/>}/>
       <Route path='notes' element={<Notes/>}/>
         {/* <Route path='sem/:semester'  */}
@@ -70,6 +69,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>
       <PdfContextProvider>
+        <ScrollToTop/>
         <RouterProvider router = {router}/>
       </PdfContextProvider>
     </Provider>
