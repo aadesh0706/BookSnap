@@ -20,6 +20,8 @@ import AboutUs from './pages/AboutUs/AboutUs.jsx'
 import ContactUs from './pages/ContactUs/ContactUs.jsx'
 import UnderDevelopment from './pages/UnderDevelopment/UnderDevelopment.jsx'
 
+import ScrollToTop from './components/ScrollToTop.js'
+
 const router = createBrowserRouter(
   createRoutesFromElements(
 
@@ -34,9 +36,9 @@ const router = createBrowserRouter(
 
 
 
-
+    <ScrollToTop/>
     <Route path='/' element={<Layout/>}>
-
+      
       <Route path='/' element={<Home/>}/>
       <Route path='notes' element={<Notes/>}/>
         {/* <Route path='sem/:semester'  */}
