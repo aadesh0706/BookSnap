@@ -1,14 +1,12 @@
-const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
-import { SignedIn } from "@clerk/clerk-react";
-
-
+import { SignIn } from '@clerk/clerk-react';
+import React from 'react';
+import './Login.css';
 function Login() {
-    
-    // <ClerkProvider publishableKey={PUBLISHABLE_KEY} afterSignOutUrl="/">
-    {/* <App /> */}
-    <SignedIn/>
-    {/* <UserButton />
-  </SignedIn> */}
-//   </ClerkProvider>
+  return (
+    <div className="login-container">
+      <SignIn />
+    </div>
+  );
 }
-export default Login
+
+export default Login;
