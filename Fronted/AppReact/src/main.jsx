@@ -5,21 +5,21 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import './index.css';
 import store from './store/store.js';
 
-import Layout from './Layout.jsx';
-import Notes from './pages/Notes/Notes.jsx';
-import Pdf1 from './pages/Pdf/Pdf1.jsx';
-
 import PdfContextProvider from './context/pdfContext/PdfContextProvider.jsx';
+import Layout from './Layout.jsx';
 import AboutUs from './pages/AboutUs/AboutUs.jsx';
 import ContactUs from './pages/ContactUs/ContactUs.jsx';
 import Home from './pages/Home/Home.jsx';
 import Login from './pages/Login/Login.jsx';
+import Notes from './pages/Notes/Notes.jsx';
 import NotesSems from './pages/NotesSem/NotesSems.jsx';
 import NotesSubjects from './pages/NotesSubject/NotesSubjects.jsx';
+import Pdf1 from './pages/Pdf/Pdf1.jsx';
 import SignUp from './pages/SignUp/SignUp.jsx';
 import UnderDevelopment from './pages/UnderDevelopment/UnderDevelopment.jsx';
 
 import { ClerkProvider } from '@clerk/clerk-react'; // Import ClerkProvider
+import ProtectedRoute from './components/ProtectedRoute'; // Import your ProtectedRoute component
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 
@@ -32,9 +32,30 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
       <Route path='/' element={<Home />} />
-      <Route path='notes' element={<Notes />} />
-      <Route path='notes/:branch' element={<NotesSems />} />
-      <Route path='notes/:branch/:semester' element={<NotesSubjects />} />
+      <Route 
+        path='notes' 
+        element={
+          <ProtectedRoute>
+            <Notes />
+          </ProtectedRoute>
+        } 
+      />
+      <Route 
+        path='notes/:branch' 
+        element={
+          <ProtectedRoute>
+            <NotesSems />
+          </ProtectedRoute>
+        } 
+      />
+      <Route 
+        path='notes/:branch/:semester' 
+        element={
+          <ProtectedRoute>
+            <NotesSubjects />
+          </ProtectedRoute>
+        } 
+      />
       <Route path='pdf' element={<Pdf1 />} />
       <Route path='login' element={<Login />} />
       <Route path='signup' element={<SignUp />} />
