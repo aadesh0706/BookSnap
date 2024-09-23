@@ -1,39 +1,8 @@
-.login-signup{
+.login-container {
     display: flex;
-    justify-content: space-between;
-}
-
-.login-signup-left{
-    flex: 1 1 0;
-    padding: 120px;
-}
-.login-signup-left>h1{
-    padding: 10px 0px;
-    font-family: poppins;
-}
-
-.login-signup-inputBox{
-    padding: 10px 0px;
-}
-
-.login-signup-right{
-    width: 50vw;
-    flex: 2 1 0;
-}
-
-.login-signup-right>img{
-    width: 50vw;
-}
-
-
-.forgetpassword:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-
-@media (min-width: 320px) and (max-width: 600px) {
-    .login-signup-right{
-        display: none;
-    }    
-}
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
